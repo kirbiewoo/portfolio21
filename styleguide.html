@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>P03 - Kirby's Portfolio</title>
+
+	<link rel="stylesheet" href="css/styleguide.css">
+	<!--<link rel="stylesheet" href="css/main.css">-->
+
+	<!-- font from Adobe Fonts --->
+	<link rel="stylesheet" href="https://use.typekit.net/xym0axd.css">
+	<!-- font from Google:https://fonts.google.com/specimen/Inter?sidebar.open&selection.family=Inter:wght@100;200;300;400;500;600;700;800#standard-styles -->
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&display=swap"
+		rel="stylesheet">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,700;0,900;1,500;1,700;1,900&display=swap"
+		rel="stylesheet" />
+	<!--Tutorial from https://www.youtube.com/watch?v=kEf1xSwX5D8-->
+	<link rel="shortcut icon" type="image/png" href="img/favicon.png">
+</head>
+
+<body>
+
+	<div class="responsive-container">
+		<h1 class="styleguide-title">Style Guide</h1>
+
+		<nav class="nav-section">
+			<div class="nav-bar">
+				<div class="menu">
+					<a class="nav-menu" href="#branding">branding</a>
+					<a class="nav-menu" href="#interactive-element"> interactive element</a>
+					<a class="nav-menu" href="#combined-elements">combined element</a>
+					<a class="nav-menu" href="#wireframes">wireframes</a>
+				</div>
+			</div>
+		</nav>
+
+		<section id="branding">
+			<h2 class="section-h2">Branding</h2>
+
+			<h3>Typeface</h3>
+			<div class="font">
+				<h4 class="sf-pro">Sofia Pro Bold</h4>
+			</div>
+
+			<div class="font">
+				<h4 class="inter-font">Inter Regular</h4>
+			</div>
+
+			<div class="font">
+				<h4 class="roboto-blk">Roboto Black</h4>
+
+			</div>
+
+			<h3>Colour Palette</h3>
+			<div class="colours">
+				<div class="colour-box colour1">
+					<p class="colour-text1">#F6EEE3</p>
+				</div>
+
+				<div class="colour-box colour2">
+					<p class="colour-text">#DE6136</p>
+				</div>
+
+				<div class="colour-box colour3">
+					<p class="colour-text">#3D3A3A</p>
+				</div>
+
+				<div class="colour-box colour4">
+					<p class="colour-text">#FD9569</p>
+				</div>
+			</div>
+			<!--Closing colours-->
+
+		</section>
+		<!--End of branding-->
+
+		<section id="interactive-element">
+			<h2 class="section-h2">Interactive Elements</h2>
+
+			<!----PROJECT LIST BUTTONS--->
+			<h3>project list buttons </h3>
+			<h4>CSS selector</h4>
+			<p>.worklist-title</p>
+			<h4>Example</h4>
+			<div class="worklist">
+				<a class="worklist-title" href="#">button</a>
+			</div>
+
+			<h4>Sample Code</h4>
+			<code>
+				&lt;div class= "worklist"&gt; <br>
+				&nbsp; &lt;a class="worklist-title" href="#"&gt;Project Link&lt;/a&gt;
+				<br>&lt;/div &gt;
+			</code>
+
+			<!----NAVIGATION BUTTON--->
+			<h3>navigation button</h3>
+			<h4>CSS selector</h4>
+			<p>.call-button</p>
+			<h4>Example</h4>
+			<div class="nav-bar">
+				<div class="menu">
+					<a class="nav-menu" href="#">button</a>
+				</div>
+			</div>
+			<h4>Sample Code</h4>
+			<code>
+				&lt;div class="nav-bar" &gt; <br>
+					&nbsp; &lt;a class="call-button" href="#"&gt;button&lt;/a&gt;
+				<br>&lt;/div&gt;
+				</code>
+
+			<!-----ABOUT LIST BUTTONS-->
+			<h3>about page buttons</h3>
+			<h4>CSS selector</h4>
+			<p>.call-button</p>
+			<h4>Example</h4>
+			<div class="list-container">
+				<a href="#">button</a>
+			</div>
+			<h4>Sample Code</h4>
+			<code>
+				&lt;div class="list-container"&gt; <br>
+				&nbsp; &lt;a href="#"&gt;button&lt;/a&gt;
+				<br>&lt;/div&gt;
+			</code>
+
+		</section>
+		<!--End of interavtive element-->
+
+		<section id="combined-elements">
+			<h2 class="section-h2 ">combined element</h2>
+
+			<h3>Main Navigation</h3>
+
+			<h4>Sample Codes</h4>
+			<code>
+					&lt;div class="nav-container"&gt;<br>
+					&nbsp; &lt;div class = "nav-bar"&gt;<br>	
+					&nbsp; &nbsp; &lt;div class="responsive-container nav-content"&gt; <br>
+					&nbsp; &nbsp; &nbsp; &lt;div class="logo"&gt;<br>
+					&nbsp; &nbsp; &nbsp; &nbsp; &lt;a href="index.html" class="brand-logo"&gt;  
+					<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;img src="img/Logo.png" alt="my K logo for my Portfolio" /&gt; 
+					<br> &nbsp; &nbsp; &nbsp; &nbsp; &lt;/a&gt; <br>
+					&nbsp; &nbsp; &nbsp; &lt;/div&gt;<br>
+					&nbsp; &nbsp; &nbsp; &lt;div class="menu"&gt; <br>
+					&nbsp; &nbsp; &nbsp; &nbsp; &lt;a class="nav-menu" href="work.html"&gt;work&lt;/a&gt; <br>
+					&nbsp; &nbsp; &nbsp; &nbsp; &lt;a class="nav-menu" href="about.html"&gt;about&lt;/a&gt; <br>
+					&nbsp; &nbsp; &nbsp; &lt;/div&gt; <br>
+					&nbsp; &nbsp; &lt;/div&gt;<br>
+					&nbsp; &lt;/div&gt;<br>
+					&lt;/div&gt;
+				</code>
+		</section>
+		<!--End of Combnined Element-->
+
+		<section id="wireframes">
+			<h2 class="section-h2">wireframes</h2>
+			<h3>home</h3>
+			<img src="img/wireframes/home.png" alt="wireframe for home, created on figma">
+
+			<h3>about</h3>
+			<img src="img/wireframes/about.png" alt="wireframe for about, created on figma">
+
+			<h3>worklist page:static</h3>
+			<img src="img/wireframes/work1.png" alt="wireframe for worklist page, created on figma">
+
+			<h3>worklist page:hover</h3>
+			<img src="img/wireframes/work2.png" alt="wireframe for worklist page, created on figma">
+
+		</section>
+
+	</div>
+	<!--end of container-->
+
+	<footer>
+		<div class="responsive-container footer-item-container">
+			<p class="footer-item__left">
+				portfolio site coded by kirby woo
+			</p>
+			<div class="foot-note footer-item__right">
+				<a href="index.html">portfolio</a>
+				<a href="citation.html">citation</a>
+			</div>
+			<!-- end of foot-note footer-item__right-->
+		</div>
+		<!--responsive-container footer-item-container-->
+	</footer>
+
+
+</body>
+
+</html>

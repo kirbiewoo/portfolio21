@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kirby Woo's Portfolio 2020</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/flexbox.css" />
+
+    <!-- font from Adobe Fonts sofia pro --->
+    <link rel="stylesheet" href="https://use.typekit.net/xym0axd.css" />
+    <!-- font from Adobe Fonts neue haas grotesk --->
+    <link rel="stylesheet" href="https://use.typekit.net/qng7gzz.css">
+
+
+    <!-- font from Google Font-->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <!--Roboto Font-->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,700;0,900;1,500;1,700;1,900&display=swap"
+        rel="stylesheet" />
+    <!-- font from Google Font (Open Sans)-->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&display=swap"
+        rel="stylesheet">
+
+    <!-- font from Google Font (IBM Plex Sans)-->
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <!-- font from Noto Sans-->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+
+    <!--Tutorial from https://www.youtube.com/watch?v=kEf1xSwX5D8-->
+    <link rel="shortcut icon" type="image/png" href="img/favicon/favicon2.png">
+
+    <!--- Lottie Animation script --->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+    <!--- jQuery script --->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <!--- Image appear on hover from https://stackoverflow.com questions/18783225/display-image-on-mouseover --->
+    <!--- Image appear on hover from https://stackoverflow.com questions/18783225/display-image-on-mouseover --->
+    <script>
+        $(document).ready(function () {
+            $('a.imageme').on('mouseenter', function () {
+                $('#imageme-img').show();
+                $(this).css({
+                    "text-decoration": ''
+                });
+            }).on('mouseleave', function () {
+                $('#imageme-img').hide();
+                $(this).css({
+                    "text-decoration": "underline"
+                });
+            });;
+        });
+    </script>
+
+</head>
+
+<body>
+    <div class="nav-container">
+        <div class="nav-bar">
+            <div class="responsive-container nav-content">
+                <div class="logo">
+                    <a href="index.html" class="brand-logo"><img src="img/kirbee-blue.svg"
+                            alt="my Kirbee logo for my Portfolio" />
+                    </a>
+                </div>
+                <!--end of logo--->
+
+                <div class="menu">
+                    <a class="nav-menu" href="work.html">work</a>
+                    <a class="nav-menu" href="about.html">about</a>
+                </div>
+                <!-- end of menu-->
+            </div>
+            <!-- end of responsive container-->
+        </div>
+        <!-- end of nav-bar-->
+    </div>
+    <!--end of nav-container-->
+
+    <div class="index-container">
+        <div class="context-container">
+            <h1 class="index-h2">Hi there! I am <a class="imageme">Kirby.</a> </h1>
+
+            <p>I am an <mark>Experience Designer</mark> from Vancouver, B.C.<br>I specialize in user research and UX
+                design.
+                <!--and strive to create empathetic and intuitive experiences that stem from a human-oriented
+				mindset.-->
+
+            </p>
+
+        </div>
+
+        <!--end of context container-->
+        <!--<div class="down-arrow">
+			<a href="#projects" aria-label="animation">
+				<lottie-player src="https://assets9.lottiefiles.com/packages/lf20_4NlOuc.json" background="transparent"
+					speed="1" style="width: 30vw; height: 30vh" loop autoplay></lottie-player>
+			</a>
+		</div>
+	</div>-->
+        <!--end of index-container-->
+
+        <!--end of context container-->
+        <!--TUTORIAL FROM https://flaviocopes.com/rotate-image/-->
+        <div class="down-arrow">
+            <a href="#projects" aria-label="animation">
+                <img src="img/scroll/bee-sm.svg" class="rotate" />
+            </a>
+        </div>
+        <img src="img/imageme.JPG" id="imageme-img" alt="Happy me in botanical garden.">
+        <!--<img src="img/Logo/SVG/bee-20.svg" id="bee-img" alt="Happy me in botanical garden.">-->
+    </div>
+    <!--end of index-container-->
+
+
+
+    <section id="projects">
+        <!--<div class="empty-div">
+		</div>-->
+        <div class="responsive-container">
+            <div class="worklist">
+                <a class="worklist-title" href="sunlife.html">SUNLIFE
+                    <div class="worklist-span">ux design internship</div>
+                    <img class="worklist-img" src="img/Testing:sl:bcsea/Sunlife(400x262).svg"
+                        alt="display image for sunlife internship" />
+                </a>
+
+                <a class="worklist-title" href="bcsea.html">B.C.SEA
+                    <div class="worklist-span">ux design/research</div>
+                    <img class="worklist-img" src="img/Testing:sl:bcsea/bcsea(400x262).svg"
+                        alt="display image for bcsea" />
+                </a>
+
+                <a class="worklist-title" href="project1.html">GOCAMP
+                    <div class="worklist-span">ux/ui design</div>
+                    <img class="worklist-img" src="img/project-img/gocamp(400 x 263).svg"
+                        alt="display image of goCamp project" />
+                </a>
+                <a class="worklist-title" href="project2.html">SPOTIFY
+                    <div class="worklist-span">interaction design</div>
+                    <img class="worklist-img" src="img/project-img/Spotify(400x263).svg"
+                        alt="display image for spotify project" />
+                </a>
+
+                <a class="worklist-title" href="ensuffur.html">ENSUFFUR
+                    <div class="worklist-span">critical design</div>
+                    <img class="worklist-img" src="img/ensuffur/fox.png" alt="display image for ensuffur project" />
+                </a>
+
+            </div>
+        </div>
+        <!--end of responsive-container-->
+    </section>
+
+
+    <footer>
+        <div class="responsive-container footer-item-container">
+            <p class="footer-item__left">
+                Site designed and coded by Kirby Woo🐝 with ♥
+            </p>
+        </div>
+        <!--responsive-container footer-item-container-->
+    </footer>
+</body>
+
+</html>
