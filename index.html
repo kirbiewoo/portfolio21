@@ -1,26 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
 <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Kirby Woo's Portfolio</title>
+	<title>Project 1 - goCamp</title>
 	<link rel="stylesheet" href="css/main.css" />
-	<link rel="stylesheet" href="css/flexbox.css" />
 
-	<!-- font from Adobe Fonts sofia pro --->
+	<!-- font from Adobe Fonts --->
 	<link rel="stylesheet" href="https://use.typekit.net/xym0axd.css" />
-	<!-- font from Adobe Fonts neue haas grotesk --->
-	<link rel="stylesheet" href="https://use.typekit.net/qng7gzz.css">
-
-
-	<!-- font from Google Font-->
+	<!-- font from Google Font (Roboto)-->
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&display=swap"
-		rel="stylesheet" />
-	<!--Roboto Font-->
-	<link
-		href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,700;0,900;1,500;1,700;1,900&display=swap"
 		rel="stylesheet" />
 	<!-- font from Google Font (Open Sans)-->
 	<link
@@ -37,146 +27,276 @@
 	<!--Tutorial from https://www.youtube.com/watch?v=kEf1xSwX5D8-->
 	<link rel="shortcut icon" type="image/png" href="img/favicon/favicon2.png">
 
-	<!--- Lottie Animation script --->
-	<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-
-	<!--- jQuery script --->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-
-	<!--- Image appear on hover from https://stackoverflow.com questions/18783225/display-image-on-mouseover --->
-	<!--- Image appear on hover from https://stackoverflow.com questions/18783225/display-image-on-mouseover --->
-	<script>
-		$(document).ready(function () {
-			$('a.imageme').on('mouseenter', function () {
-				$('#imageme-img').show();
-				$(this).css({
-					"text-decoration": ''
-				});
-			}).on('mouseleave', function () {
-				$('#imageme-img').hide();
-				$(this).css({
-					"text-decoration": "underline"
-				});
-			});;
-		});
-	</script>
-
 </head>
 
 <body>
 	<div class="nav-container">
 		<div class="nav-bar">
-			<div class="responsive-container nav-content">
-				<div class="logo">
-					<a href="index.html" class="brand-logo"><img src="img/kirbee-blue.svg"
-							alt="my Kirbee logo for my Portfolio" />
-					</a>
+			<div class="responsive-container">
+				<div class="nav-content">
+					<div class="logo">
+						<a href="index.html" class="brand-logo"><img src="img/kirbee-blue.svg"
+								alt="my Kirbee logo for my Portfolio" />
+						</a>
+					</div>
+					<!--end of logo--->
+
+					<div class="menu">
+						<a class="nav-menu" href="work.html">work</a>
+						<a class="nav-menu" href="about.html">about</a>
+					</div>
+					<!-- end of menu-->
 				</div>
-				<!--end of logo--->
+				<!--nav-content-->
+			</div>
+			<!--responsive-container-->
+		</div>
+		<!--nav-bar-->
+	</div>
+	<!--nav-container-->
 
-				<div class="menu">
-					<a class="nav-menu" href="work.html">work</a>
-					<a class="nav-menu" href="about.html">about</a>
+	<div class="responsive-container">
+		<!--<div id="horizontal-line" class="line"></div>-->
+
+		<div class="project-container">
+			<img class="spotify-header-img" src="img/goCamp/cover2.png"
+				alt="image as a title image for goCamp projcet" />
+			<div class="project-content">
+				<div class="project-content__left project-content--medium">
+					<h1 class="gocamp-h3">Overview</h1>
+					<p class="overview-p">
+						In a senior user interface design course, we were
+						tasked to conduct research for a selected design
+						domain to understand users’ needs and goals for
+						potential application opportunities. Seeing that
+						Canada is home to some truly stunning scenery, more
+						people are gaining interest in camping within the
+						past decade. However, there are currently no
+						application that can provide detailed information
+						about camping all in one app., campers are usually
+						required to open up several tabs and apps to look
+						for the information they need. We saw an opportunity
+						to create an application that serves as an
+						all-inclusive platform for both beginners and
+						experienced campers.
+
+					</p>
+
+					<p class="arrow-text"> ↳ To view the full version of case study, please go to Medium :3
+						<br>
+						<a href="https://medium.com/design-bootcamp/make-planning-your-camping-trip-a-little-easier-with-gocamp-app-a-case-study-8ba743026e13"
+							target="_blank" class="cs-btn"> View Full Case Study on Medium</a>
+					</p>
 				</div>
-				<!-- end of menu-->
+				<!--end of project-content__left project-content--medium -->
+
+
+				<div class="project-content__right project-content--small">
+					<p class="general-header"><b>Team</b></p>
+					<p>Junyi Shi, Zoe Yuan, David Gu</p>
+					<p class="general-header"><b>My Roles</b></p>
+					<p>
+						User research, User testing, UX design, Interaction
+						Design
+					</p>
+					<p class="general-header"><b>Tools</b></p>
+					<p>
+						Figma, Protopie, Illustrator, Photoshop
+					</p>
+				</div>
+				<!--end ofproject-content__right project-content--small-->
 			</div>
-			<!-- end of responsive container-->
-		</div>
-		<!-- end of nav-bar-->
-	</div>
-	<!--end of nav-container-->
-
-	<div class="index-container">
-		<div class="context-container">
-			<h1 class="index-h2">Hi there! I am <a class="imageme">Kirby.</a> </h1>
-
-			<p>I am an <mark>Experience Designer</mark> from Vancouver, B.C.<br> I specialize in user research and UX
-				design.
-				<!--and strive to create empathetic and intuitive experiences that stem from a human-oriented
-				mindset.-->
-
-			</p>
-
-		</div>
-
-		<!--end of context container-->
-		<!--<div class="down-arrow">
-			<a href="#projects" aria-label="animation">
-				<lottie-player src="https://assets9.lottiefiles.com/packages/lf20_4NlOuc.json" background="transparent"
-					speed="1" style="width: 30vw; height: 30vh" loop autoplay></lottie-player>
-			</a>
-		</div>
-	</div>-->
-		<!--end of index-container-->
-
-		<!--end of context container-->
-		<!--TUTORIAL FROM https://flaviocopes.com/rotate-image/-->
-		<div class="down-arrow">
-			<a href="#projects" aria-label="animation">
-				<img src="img/scroll/bee-sm.svg" class="rotate" />
-			</a>
-		</div>
-		<img src="img/imageme.JPG" id="imageme-img" alt="Happy me in botanical garden.">
-		<!--<img src="img/Logo/SVG/bee-20.svg" id="bee-img" alt="Happy me in botanical garden.">-->
-	</div>
-	<!--end of index-container-->
+			<!--end of project-content-->
 
 
-
-	<section id="projects">
-		<!--<div class="empty-div">
-		</div>-->
-		<div class="responsive-container">
-			<div class="worklist">
-				<!--<a class="worklist-title" href="ircc.html"> Government
-					<div class="worklist-span">service design</div>
-					<img class="worklist-img" src="img/project-img/IRCC(400x263).svg"
-						alt="display image for IRCC Study Permit project" />
-				</a>-->
-
-				<!--<a class="worklist-title" href="ircc.html"> VendorPM
-					<div class="worklist-span">ux design</div>
-					<img class="worklist-img" src="img/project-img/IRCC(400x263).svg"
-						alt="display image for IRCC Study Permit project" />
-				</a>-->
-
-				<a class="worklist-title" href="sunlife.html">SUNLIFE
-					<div class="worklist-span">ux design internship</div>
-					<img class="worklist-img" src="img/project-img/Sunlife(400x262).svg"
-						alt="display image for sunlife internship" />
-				</a>
-
-				<a class="worklist-title" href="bcsea.html">B.C.SEA
-					<div class="worklist-span">ux design/research</div>
-					<img class="worklist-img" src="img/project-img/BCSEA/bcsea(400x262).svg"
-						alt="display image for bcsea" />
-				</a>
-
-				<a class="worklist-title" href="project1.html">GOCAMP
-					<div class="worklist-span">ux/ui design</div>
-					<img class="worklist-img" src="img/project-img/gocamp(400 x 263).svg"
-						alt="display image of goCamp project" />
-				</a>
-				<a class="worklist-title" href="project2.html">SPOTIFY
-					<div class="worklist-span">interaction design</div>
-					<img class="worklist-img" src="img/project-img/Spotify(400x263).svg"
-						alt="display image for spotify project" />
-				</a>
-				<!--<a class="worklist-title" href="ensuffur.html">ENSUFFUR
-					<div class="worklist-span">critical design</div>
-					<img class="worklist-img" src="img/ensuffur/fox.png" alt="display image for spotify project" />
-				</a>-->
-
+			<!-- <div class="project-content"> -->
+			<div class="gocamp-vid">
+				<div class="video-responsive">
+					<iframe width="420" height="315" src="https://player.vimeo.com/video/350715926" title="vimeo player"
+						allowfullscreen></iframe>
+				</div>
 			</div>
-		</div>
-		<!--end of responsive-container-->
-	</section>
+			<!-- end of gocamp-vid-->
+			<!-- </div> -->
+			<!--end of project-content-->
 
+			<div class="project-content">
+				<div class="project-content__left two-cols-content-container">
+					<h1 class="gocamp-h3">Frustrations</h1>
+					<p>
+						Some of the biggest concern for campers are
+						preparation before camping, and running into
+						technical problem during camping such as “how to set
+						up tents properly”, “what to do when I encounter a
+						bear” and such. Although there are many existing
+						applications for camping, most of these focus on
+						certain campgrounds in one region. Campers are left
+						to find solutions on several browsers and apps when
+						they encounter issues in their camping trips. (see
+						below for users' comments on existing applications)
+					</p>
+				</div> <!-- end of project-content__left two-cols-content-container-->
+
+				<!--<div class="project-content__right project-content--responsive">-->
+				<div class="problem-img">
+					<img src="img/goCamp/problem.png" alt="image of problems we found from other similar
+					applications" />
+				</div> <!-- end of project-content__right project-content--responsive-->
+			</div>
+			<!--end of project-content-->
+
+
+			<div class="project-content">
+				<div class="project-content__left two-cols-content-container">
+					<h1 class="gocamp-h3">Research</h1>
+					<p>
+						We began researching for insight on this issue by
+						researching the challenges these existing
+						applications pose. We then took these insights and
+						created our own application interface that could
+						better guide campers on their trips.
+					</p>
+				</div>
+				<!--end of project-content__left two-cols-content-container-->
+			</div> <!-- end of project-content-->
+
+			<div class="project-content">
+				<div class="project-content__left project-content--medium">
+					<h1 class="insight-header">
+						Insight: Information does not have a clear hierarchy
+					</h1>
+					<br />
+					<p>
+						With the current travel applications designed
+						camping, we noticed they lack hierarchy in
+						information, and the applications do not interact
+						with users enough to keep them motivated and
+						continue using the app. While most campers camp in
+						groups, most of the application consists of banal
+						and tedious interface that does not allow
+						collaboration on apps for trip planning. Plus, a lot
+						of apps are not accessible while the internet is
+						poor.
+					</p>
+				</div>
+				<!--end of project-content__left project-content--medium-->
+			</div>
+			<!--end of project-content-->
+
+			<div class="project-content">
+				<div class="project-content__left two-cols-content-container">
+					<h1 class="gocamp-h3">Proposal</h1>
+					<p>
+						Camping has been growing in popularity, however none
+						of the current applications provide trip planning
+						and skill learning all in one application, hence we
+						came up with the idea where users can search up
+						campsites and learn about camping at the same
+						time.In addition, according to (Gursoy, Chen & Y.Lu,
+						2012), only 2% of the population in the United
+						States camp alone, for that reason, users could use
+						our application to create and customize checklists
+						and share information among contacts who are also
+						taking part in the camping trip rather than relying
+						on endless struggle of group texts.
+						<br><br>
+						With goCamp, both beginners and experienced campers
+						can learn about all the information they need to
+						prepare for their trips. Campers can also view the
+						saved articles offline and use the AR camera to
+						detect plants in the wild. The articles provided by
+						our app will assist in addressing the frequently
+						asked issues and information.
+					</p>
+				</div>
+				<!--end of project-content__left two-cols-content-container -->
+			</div> <!-- end of project-content-->
+
+			<div class="project-content">
+				<div class="project-content__left project-content--large">
+					<h1 class="gocamp-h3">Wireframe for "destination"</h1>
+					<img class="project1-img" src="img/goCamp/destination1.png"
+						alt="wireframe image for destination feature" />
+				</div> <!-- end of project-content__left project-content--large-->
+			</div>
+			<!--end of project-content-->
+
+			<div class="project-content">
+				<div class="project-content__left project-content--large">
+					<h1 class="gocamp-h3">Wireframe for "profile"</h1>
+					<img class="project1-img" src="img/goCamp/skill.png" alt="wireframe image for profile page" />
+				</div>
+				<!--end of project-content__left project-content--large-->
+			</div>
+			<!--end of project-conten-->
+
+			<div class="project-content">
+				<div class="project-content__left project-content--large">
+					<h1 class="gocamp-h3">Personas</h1>
+					<!--<div class="persona-right"></div>-->
+					<div class="problem-img">
+						<img src="img/goCamp/persona1.png" alt="image of persona for beginner user" />
+						<img src="img/goCamp/persona2.png" alt="image of persona for experienced user" />
+					</div>
+				</div>
+				<!--end of project-content__left project-content--medium-->
+			</div>
+			<!--end of project-contents-->
+
+			<!--<div class="project-content">-->
+			<div class="project-content__left">
+				<h1 class="gocamp-h3">Prototype</h1>
+			</div>
+			<!--end of project-content__left project-content--medium-->
+			<div class="gocamp-vid">
+				<div class="video-responsive">
+					<!--Tutorial from https://developers.google.com/youtube/player_parameters-->
+					<iframe title="youtube player" width="420" height="315"
+						src="https://youtube.com/embed/c3DRh61TPrs?autoplay=1" allowfullscreen>
+					</iframe>
+				</div>
+			</div>
+			<!--end of gocamp-vid-->
+
+			<!--</div>-->
+			<!--end of project-content-->
+
+			<div class=" project-content">
+				<div class="project-content__left project-content--medium">
+					<h1 class="gocamp-h3 ">Reflection/ Takeaway</h1>
+					<p>
+						Planning a camping trip should be a fun, exciting experience that flows smoothly into the
+						camping journey itself. The proposal of goCamp aims to offer that with a friction-free user
+						flow. I was satisfied as to how far we went with our project. As the was one of the first user
+						experience courses I have taken, it was an intense experience to be thrown in the deep end of
+						integrating design thinking with real business problems that were also drawn from my own
+						experiences. This project also made me realize the importance of communicating an idea and
+						executing it at a high level. <br><br>
+
+						However, in hindsight, one part I would have wanted to improve is to consider the overall mobile
+						experience. For example, the body text on the content pages (Places and Camping 101) is too
+						small and may not be legible on mobiles. I learned that it is important to create a
+						mobile-friendly application that allows the user to accomplish their goals efficiently.
+
+					</p>
+				</div>
+			</div>
+
+			<section id="project-link">
+				<!--<a href="sunlife.html"> &lt; &lt;Sunlife</a>-->
+				<a href="project2.html">view my next project: Spotify </a>
+				<!--<a href="project1.html">goCamp&gt;&gt;</a>-->
+			</section>
+
+		</div>
+		<!--end of project-container-->
+	</div>
+	<!-- end of responsive-container-->
 
 	<footer>
 		<div class="responsive-container footer-item-container">
 			<p class="footer-item__left">
-				Site designed and coded by Kirby Woo🐝 with ♥
+				Site designed and coded by Kirby Woo with ♥
 			</p>
 		</div>
 		<!--responsive-container footer-item-container-->
